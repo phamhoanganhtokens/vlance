@@ -5,110 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opal Radiance | Luxury Editorial</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        champagne: '#FCFAF8',
-                        charcoal: '#2C2C2C',
-                        bronze: '#AF9461',
-                    },
-                    fontFamily: {
-                        serif: ['Times New Roman', 'Times', 'serif'],
-                        display: ['Georgia', 'serif']
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        body { background-color: #FCFAF8; color: #2C2C2C; }
-        .justified { text-align: justify; }
-        .hero-gradient { background: linear-gradient(135deg, #f3efe9 0%, #ffffff 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #FCFAF8;
+            color: #2C2C2C;
+        }
+        .luxury-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+        .gold-border {
+            border-color: #AF9461;
+        }
+        .gold-text {
+            color: #AF9461;
+        }
     </style>
 </head>
-<body class="font-serif antialiased leading-relaxed">
+<body class="antialiased py-12 px-6">
 
-    <!-- Container -->
-    <main class="max-w-[1000px] mx-auto px-6 py-12">
-
+    <main class="max-w-[1000px] mx-auto">
         <!-- Hero Section -->
-        <section class="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div class="h-[500px] w-full border border-bronze/30 flex items-center justify-center bg-gray-100 shadow-xl relative overflow-hidden">
-                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1616394584738-fc6e613271b5?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-80"></div>
-                <span class="text-bronze italic tracking-widest uppercase text-sm">Opal Radiance</span>
+        <header class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+            <div class="aspect-[4/5] bg-gray-200 border border-[#AF9461]/30 flex items-center justify-center relative shadow-2xl">
+                <span class="text-[#AF9461] font-light tracking-[0.2em]">OPAL RADIANCE IMAGE</span>
             </div>
             <div class="space-y-6">
-                <h1 class="text-sm uppercase tracking-[0.3em] text-bronze font-semibold">Bộ Sưu Tập Thượng Lưu</h1>
-                <h2 class="text-4xl md:text-5xl font-display font-bold leading-tight">Opal Radiance: Tuyệt Tác Dưỡng Trắng Và Hồi Sinh Làn Da Thanh Xuân</h2>
-                <p class="text-xl text-charcoal/80">Kem Dưỡng Trắng Da Cao Cấp Opal Radiance – Rạng Ngời Đa Diện, Vượt Thời Gian</p>
-                <div class="w-20 h-px bg-bronze"></div>
-                <p class="text-lg italic text-charcoal/90">Opal Radiance là dòng kem dưỡng thượng lưu kết hợp sức mạnh từ Niacinamide 10% và chiết xuất hoa lan Vân Nam quý hiếm, giúp đánh thức làn da trắng sáng, mờ thâm nám và ngăn ngừa lão hóa chuyên sâu dành riêng cho phụ nữ từ 28-40 tuổi.</p>
+                <h1 class="luxury-serif text-4xl md:text-5xl leading-tight">Tuyệt Tác Tái Sinh Nhan Sắc Opal Radiance</h1>
+                <h2 class="text-xl font-medium opacity-80">Kem Dưỡng Trắng & Ngăn Ngừa Lão Hóa Cao Cấp – Niacinamide 10%</h2>
+                <h3 class="text-lg italic text-[#AF9461]">Giải Pháp Dưỡng Da Toàn Diện Đánh Thức Vẻ Đẹp Vĩnh Cửu</h3>
+                <div class="pt-4">
+                    <button class="border border-[#2C2C2C] px-8 py-3 uppercase tracking-widest hover:bg-[#2C2C2C] hover:text-white transition-all duration-500">Khám Phá Ngay</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Short Description -->
+        <section class="mb-20">
+            <p class="text-2xl italic leading-relaxed text-center opacity-90 font-serif">
+                "Khơi nguồn vẻ đẹp rạng rỡ với Opal Radiance, sự kết hợp tinh tế giữa 10% Niacinamide nồng độ cao và chiết xuất hoa lan Vân Nam quý hiếm, giúp dưỡng trắng chuyên sâu, xóa nhòa dấu vết thời gian và nâng niu làn da phụ nữ Việt thêm phần kiêu sa."
+            </p>
+        </section>
+
+        <!-- Long Description -->
+        <section class="mb-24">
+            <h2 class="luxury-serif text-3xl mb-8 border-b border-[#AF9461]/30 pb-4 inline-block tracking-widest">HÀNH TRÌNH TÁI TẠO</h2>
+            <p class="text-lg leading-loose text-justify">
+                Trong hành trình gìn giữ nét thanh xuân, Opal Radiance xuất hiện như một kỳ quan chăm sóc da dành riêng cho những người phụ nữ tinh tế và am tường về cái đẹp. Sản phẩm là sự giao thoa hoàn mỹ giữa quyền năng khoa học hiện đại và những báu vật tinh túy từ thiên nhiên. Với nồng độ 10% Niacinamide – con số vàng trong ngành mỹ phẩm, Opal Radiance không chỉ mang lại hiệu quả làm sáng da vượt trội mà còn giúp se khít lỗ chân lông và làm đều màu da một cách thần kỳ. Điểm nhấn độc bản nằm ở Chiết xuất hoa lan Vân Nam – loài hoa kiêu kỳ sống nơi núi cao khắc nghiệt, chứa đựng sức sống bền bỉ và khả năng chống oxy hóa mạnh mẽ, giúp bảo vệ làn da trước những tác nhân gây lão hóa từ môi trường. Sự hiện diện phối hợp của Hyaluronic Acid và Vitamin C ổn định như một bàn tay vô hình, vừa cấp bách bù đắp độ ẩm sâu, vừa kích thích sản sinh collagen tự nhiên, mang lại độ đàn hồi và sự căng mướt đầy sức sống. Kết cấu kem mỏng nhẹ như lụa, tan chảy ngay khi vừa chạm vào da, để lại một lớp màng satin mịn màng cùng hương thơm dịu nhẹ, thanh khiết như nắng sớm, biến mỗi bước dưỡng da hàng ngày thành một nghi thức thư giãn thượng lưu dành cho giác quan.
+            </p>
+        </section>
+
+        <!-- Features & Care Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+            <div>
+                <h2 class="luxury-serif text-2xl mb-8 tracking-widest">ĐẶC ĐIỂM NỔI BẬT</h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Dưỡng trắng và hiệu chỉnh tông da chuyên sâu nhờ hàm lượng Niacinamide 10% cao cấp.</li>
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Chống lão hóa và bảo vệ da khỏi các gốc tự do với tinh chất hoa lan Vân Nam quý hiếm.</li>
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Cấp ẩm tức thì và duy trì độ ẩm mịn suốt 24 giờ nhờ phân tử Hyaluronic Acid đa tầng.</li>
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Tăng cường độ săn chắc và làm sáng da an toàn, bền vững với Vitamin C thế hệ mới ổn định.</li>
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Kết cấu siêu mỏng nhẹ, thẩm thấu nhanh tuyệt đối, phù hợp hoàn hảo với làn da và khí hậu Á Đông.</li>
+                    <li class="flex gap-3 text-justify"><span class="gold-text">◆</span> Mùi hương sang trọng, tinh tế, mang lại cảm giác thư thái và chiều chuộng bản thân tối đa.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="luxury-serif text-2xl mb-8 tracking-widest">HƯỚNG DẪN SỬ DỤNG & BẢO QUẢN</h2>
+                <p class="text-justify leading-relaxed text-lg italic opacity-80 border-l-2 border-[#AF9461] pl-6 py-2">
+                    Để tận hưởng trọn vẹn quyền năng từ Opal Radiance, quý cô hãy thực hiện quy trình dưỡng da sau khi đã làm sạch và cân bằng da bằng toner. Lấy một lượng kem vừa đủ bằng dụng cụ sạch, nhẹ nhàng chấm lên trán, mũi, hai má và cằm. Sử dụng đầu ngón tay vỗ nhẹ và massage theo chuyển động tròn hướng từ dưới lên trên để hỗ trợ nâng cơ mặt. Đừng quên chăm sóc vùng cổ để duy trì vẻ đẹp đồng nhất. Sử dụng đều đặn mỗi sáng và tối. Vào ban ngày, luôn kết hợp cùng kem chống nắng để bảo vệ làn da đang trong quá trình tái tạo. Bảo quản sản phẩm tại nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp và nhiệt độ cao. Luôn đóng chặt nắp sau khi sử dụng để giữ trọn vẹn độ tinh khiết của các hoạt chất quý bên trong.
+                </p>
             </div>
         </section>
 
-        <!-- Main Content -->
-        <article class="max-w-[800px] mx-auto space-y-12 mb-24">
-            <section class="justified">
-                <h3 class="text-2xl font-display border-b border-bronze pb-2 mb-6 text-bronze uppercase tracking-widest">Chi tiết sản phẩm</h3>
-                <p class="text-lg leading-loose">
-                    Opal Radiance không chỉ là một sản phẩm dưỡng da, mà là một trải nghiệm chăm sóc sắc đẹp đẳng cấp dành cho những quý cô yêu chuộng vẻ đẹp thanh lịch và bền vững. Được chắt lọc từ những nguyên liệu tinh túy nhất như chiết xuất Lan Vân Nam – biểu tượng của sức sống mãnh liệt, kết hợp cùng Niacinamide nồng độ cao và Vitamin C ổn định, Opal Radiance mang đến giải pháp toàn diện cho làn da bắt đầu xuất hiện dấu hiệu của thời gian. Sản phẩm len lỏi vào từng tế bào để ức chế hắc sắc tố, đẩy lùi các đốm nâu và hiệu chỉnh tông da trắng sáng trong trẻo.
-                </p>
-            </section>
-
-            <!-- Features and Care -->
-            <div class="grid md:grid-cols-2 gap-12">
-                <section>
-                    <h3 class="text-xl font-display text-bronze uppercase tracking-widest mb-6">Đặc điểm nổi bật</h3>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Niacinamide 10% nồng độ tối ưu giúp dưỡng trắng chuyên sâu.</li>
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Chiết xuất hoa lan Vân Nam tăng cường khả năng chống oxy hóa.</li>
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Hyaluronic Acid đa phân tử cấp ẩm tức thì, căng mọng 24h.</li>
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Vitamin C ổn định giúp làm sáng đều màu da.</li>
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Kết cấu kem lỏng nhẹ, thẩm thấu nhanh, không nhờn rít.</li>
-                        <li class="flex items-start"><span class="mr-2 text-bronze">◆</span>Hiệu quả kép: dưỡng trắng và ngăn ngừa lão hóa sớm.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3 class="text-xl font-display text-bronze uppercase tracking-widest mb-6">Hướng dẫn sử dụng</h3>
-                    <p class="text-sm justified leading-loose">
-                        Sử dụng đều đặn 2 lần mỗi ngày vào buổi sáng và buổi tối sau bước làm sạch. Lấy lượng kem bằng hạt ngọc trai, chấm 5 điểm trên khuôn mặt và massage theo hướng từ dưới lên trên, từ trong ra ngoài. Kết hợp kem chống nắng vào ban ngày. Bảo quản nơi khô ráo, tránh ánh nắng trực tiếp.
-                    </p>
-                </section>
+        <!-- Marketing Toolkit -->
+        <section class="bg-[#F2EFEA] p-10 rounded-sm mb-24">
+            <h2 class="luxury-serif text-2xl mb-8 text-center tracking-widest">NỘI DUNG TRUYỀN THÔNG</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 border-t-2 border-[#AF9461] shadow-sm"><p class="text-sm italic">Facebook 1: Gửi những quý cô đang tìm kiếm hào quang thật sự của làn da. Opal Radiance không chỉ là một hũ kem dưỡng, đó là lời khẳng định cho vẻ đẹp vượt thời gian.</p></div>
+                <div class="bg-white p-6 border-t-2 border-[#AF9461] shadow-sm"><p class="text-sm italic">Facebook 2: Vẻ đẹp tinh tế bắt nguồn từ một làn da khỏe mạnh và tràn đầy nhựa sống. Với Opal Radiance, chúng tôi mang tới giải pháp dưỡng trắng chuyên sâu.</p></div>
+                <div class="bg-white p-6 border-t-2 border-[#AF9461] shadow-sm"><p class="text-sm italic">Instagram 1: Báu vật từ vùng núi Vân Nam dành tặng làn da quý cô. Thẩm thấu sâu, đánh thức vẻ rạng rỡ tiềm ẩn ngay từ lần chạm đầu tiên. #OpalRadiance</p></div>
+                <div class="bg-white p-6 border-t-2 border-[#AF9461] shadow-sm"><p class="text-sm italic">Instagram 2: Kết cấu mịn mướt như lụa, hương thơm thanh khiết như mây trời. Hãy biến mỗi tối thành một nghi thức yêu chiều làn da.</p></div>
+                <div class="bg-white p-6 border-t-2 border-[#AF9461] shadow-sm"><p class="text-sm italic">TikTok: Bật tông da trắng sáng và đẩy lùi lão hóa với cực phẩm Niacinamide 10% kết hợp Hoa Lan Vân Nam. Da mướt mịn, thấm nhanh!</p></div>
             </div>
-        </article>
 
-        <!-- Marketing Section -->
-        <section class="bg-[#F3F0EC] p-12 rounded-sm border border-bronze/10">
-            <h3 class="text-2xl font-display text-center text-charcoal mb-12 uppercase tracking-widest">Cảm hứng từ Opal Radiance</h3>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-6 border border-bronze/20 bg-white hover:border-bronze transition-all cursor-pointer">
-                    <p class="text-sm italic text-charcoal/80 mb-4">"Nét đẹp thanh xuân không nằm ở việc phủ nhận thời gian, mà là cách chúng ta nâng niu bản thân..."</p>
-                    <span class="text-[10px] uppercase font-bold text-bronze">Facebook 01</span>
+            <!-- SEO Tags -->
+            <div class="mt-12 text-center">
+                <h4 class="text-xs uppercase tracking-[0.2em] mb-4 opacity-60">Keywords</h4>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <span class="text-xs border border-[#AF9461]/40 px-3 py-1 uppercase italic">kem dưỡng trắng da cao cấp</span>
+                    <span class="text-xs border border-[#AF9461]/40 px-3 py-1 uppercase italic">chống lão hóa da phụ nữ 30</span>
+                    <span class="text-xs border border-[#AF9461]/40 px-3 py-1 uppercase italic">Niacinamide 10%</span>
+                    <span class="text-xs border border-[#AF9461]/40 px-3 py-1 uppercase italic">chiết xuất hoa lan Vân Nam</span>
+                    <span class="text-xs border border-[#AF9461]/40 px-3 py-1 uppercase italic">mỹ phẩm luxury Việt Nam</span>
                 </div>
-                <div class="p-6 border border-bronze/20 bg-white hover:border-bronze transition-all cursor-pointer">
-                    <p class="text-sm italic text-charcoal/80 mb-4">"Nàng có biết, sau tuổi 28, làn da bắt đầu cần một nguồn năng lượng chuyên biệt hơn? Opal Radiance..."</p>
-                    <span class="text-[10px] uppercase font-bold text-bronze">Facebook 02</span>
-                </div>
-                <div class="p-6 border border-bronze/20 bg-white hover:border-bronze transition-all cursor-pointer">
-                    <p class="text-sm italic text-charcoal/80 mb-4">"Da trắng phát sáng, mờ thâm hiệu quả với Opal Radiance! 10% Niacinamide kết hợp Hoa Lan..."</p>
-                    <span class="text-[10px] uppercase font-bold text-bronze">TikTok</span>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center text-charcoal/60 text-xs">
-                <span class="font-bold text-bronze uppercase">Tags:</span> 
-                kem dưỡng trắng da cao cấp, Opal Radiance, chống lão hóa da tuổi 30, dưỡng da hoa lan, mỹ phẩm sang trọng
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="mt-20 text-center border-t border-bronze/20 pt-8">
-            <p class="text-charcoal font-display text-sm tracking-widest uppercase">AI Software Development</p>
-            <p class="text-bronze text-xs mt-2 italic">www.phamhoanganhtokens.com</p>
+        <footer class="text-center pb-12">
+            <p class="text-sm uppercase tracking-widest">AI Software Development</p>
+            <p class="text-xs opacity-50 mt-2">www.aisoftwaredevelopment.com</p>
         </footer>
-
     </main>
 
 </body>
